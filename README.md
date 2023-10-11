@@ -7,6 +7,7 @@
 ```
 torch.tensor([1, 2, 3])
 ```
+  
   * Better
 ```
 torch.tensor(np.array([1, 2, 3]))
