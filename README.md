@@ -15,6 +15,10 @@ torch.tensor(np.array([1, 2, 3]))
 docker run -it --rm --gpus all ...
 ```
 
+* Size of `runtime` images < size of `devel` images
+  * runtime: extends the base image by adding all the shared libraries from the CUDA toolkit. Use this image if you have a pre-built application using multiple CUDA libraries.
+  * devel: extends the runtime image by adding the compiler toolchain, the debugging tools, the headers and the static libraries. Use this image to compile a CUDA application from sources.
+
 * Check if run with GPU 
 ```
 import torch
