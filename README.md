@@ -30,3 +30,10 @@ torch.cuda.is_available()
     * install driver by executing `sudo apt install nvidia-driver-410`
     * install cuda version of pytorch with `pip`
       * `pip3 install torch==1.10.0+cu113 torchvision==0.11.0+cu113 --extra-index-url https://download.pytorch.org/whl/cu113` 
+
+
+* Check if installed pytroch cpu only
+```
+$> conda list
+pytorch                   1.13.1          cpu_py310hd11e9c7_1    conda-forge
+```
